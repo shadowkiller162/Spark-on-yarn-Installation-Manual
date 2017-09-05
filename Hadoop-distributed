@@ -1,0 +1,35 @@
+# 基礎安裝部份請參考 singleNode 安裝流程
+
+## 請用 VB 或是 VMware 啟動4台主機（包含 Host 本機）
+
+## 設定主機資訊（每一台）
+sudo vi /etc/hosts
+以下為我的電腦設定，請依個人需求更改
+192.168.1.150 nn
+192.168.1.151 dn01
+192.168.1.152 dn02
+192.168.1.153 dn03
+
+## 發送金鑰
+
+## 修改 Hadoop 組態設定檔
+
+### core-site.xml(nn與dn相同)
+<configuration>
+<property>
+  <name>fs.default.name</name>
+  <value>hdfs://nn:9000</value>
+</property>
+</configuration>
+
+### hdfs-site.xml(nn)
+<configuration>
+<property>
+ <name>dfs.replication</name>
+ <value>3</value>
+</property>
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>file:///home/hadoop/hadoopdata/hdfs/namenode</value>
+</property>
+</configuration>
