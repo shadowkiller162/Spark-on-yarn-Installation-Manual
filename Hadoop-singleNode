@@ -139,19 +139,19 @@ vi /home/hadoop/hadoop/etc/hadoop/hdfs-site.xml
 </property>
 <property>
 	<name>dfs.namenode.name.dir</name>
-	<value>file:/home/hadoop/hadoop/hadoop_data/hdfs/namenode</value>
+	<value>file:///home/hadoop/hadoop_data/hdfs/namenode</value>
 </property>
 <property>
 	<name>dfs.datanode.name.dir</name>
-	<value>file:/home/hadoop/hadoop/hadoop_data/hdfs/datanode</value>
+	<value>file:///home/hadoop/hadoop_data/hdfs/datanode</value>
 </property>
 
 ## 建立與格式化HDFS目錄
 
 建立namenode目錄
-mkdir –p /home/hadoop/hadoop/hadoop_data/hdfs/namenode
+mkdir –p /home/hadoop/hadoop_data/hdfs/namenode
 建立data目錄
-mkdir –p /home/hadoop/hadoop/hadoop_data/hdfs/datanode
+mkdir –p /home/hadoop/hadoop_data/hdfs/datanode
 將HDFS進行格式化
 hadoop namenode –format
 
