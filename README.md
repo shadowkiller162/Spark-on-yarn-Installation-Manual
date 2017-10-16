@@ -5,4 +5,4 @@
 * Hadoop-distributed
   + 在不同台機器上啟動 name node 及 data node，並以yarn實現資源管理
 * Scala2.12.2安裝
-python2.7.13安裝程序
+* python2.7.13安裝程序
