@@ -100,7 +100,7 @@ source ~/.bashrc
 hadoop version
 ```
 會看到如下的畫面:
-Hadoop 2.7.3
+> Hadoop 2.7.3
 Subversion Hadoop 2.7.3
 Subversion https://git-wip-us.apache.org/repos/asf/hadoop.git -r baa91f7c6bc9cb92be5982de4719c1c8af91ccff
 Compiled by root on 2016-08-18T01:41Z
@@ -150,7 +150,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_131
 ```
 vi /home/hadoop/hadoop/etc/hadoop/core-site.xml
 ```
-在<configuration></configuration>間，輸入下列內容:
+在`<configuration></configuration>`間，輸入下列內容:
 ```
 <property>
 	<name>fs.default.name</name>
@@ -162,7 +162,7 @@ vi /home/hadoop/hadoop/etc/hadoop/core-site.xml
 ```
 vi /home/hadoop/hadoop/etc/hadoop/yarn-site.xml
 ```
-在<configuration></configuration>間，輸入下列內容:
+在`<configuration></configuration>`間，輸入下列內容:
 ```
 <property>
 	<name>yarn.nodemanager.aux-services</name>
@@ -179,7 +179,7 @@ vi /home/hadoop/hadoop/etc/hadoop/yarn-site.xml
 cp /home/hadoop/hadoop/etc/hadoop/mapred-site.xml.template /home/hadoop/hadoop/etc/hadoop/mapred-site.xml
 vi /home/hadoop/hadoop/etc/hadoop/mapred-site.xml
 ```
-在<configuration></configuration>間，輸入下列內容:
+在`<configuration></configuration>`間，輸入下列內容:
 ```
 <property>
 	<name>mapreduce.framework.name</name>
@@ -191,7 +191,7 @@ vi /home/hadoop/hadoop/etc/hadoop/mapred-site.xml
 ```
 vi /home/hadoop/hadoop/etc/hadoop/hdfs-site.xml
 ```
-在<configuration></configuration>間，輸入下列內容:
+在`<configuration></configuration>`間，輸入下列內容:
 ```
 <property>
 	<name>dfs.replication</name>
