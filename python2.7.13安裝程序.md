@@ -32,6 +32,7 @@ sudo vi /usr/bin/yum
 將 #!/usr/bin/python
 改為 #!/usr/bin/python2.7
 ```
+```
 sudo vi /usr/libexec/urlgrabber-ext-down
 
 將 #!/usr/bin/python
