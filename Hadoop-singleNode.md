@@ -2,10 +2,12 @@
 
 ## Java 開發與執行環境
 
-先安裝JAVA
+* 先安裝JAVA
+```
 wget --no-cookie --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracl.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
 rpm -ivh jdk-8u131-linux-x64.rpm
-安裝完後，檢查一下
+```
+* 安裝完後，檢查一下
 java -version
 
 ## 設定Hadoop專用帳號
