@@ -7,4 +7,4 @@
 * Scala2.12.2安裝
 * python2.7.13安裝程序
 * anaconda安裝
-  + 推薦直接安裝anaconda，自帶jupyter notebook及各式常用模組
+  + 推薦直接安裝anaconda，自帶jupyter notebook及各式常用模組
