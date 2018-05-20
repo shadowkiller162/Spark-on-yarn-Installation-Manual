@@ -61,9 +61,10 @@ spark.driver.memory                                       1g
 spark.executor.memory                                     512m
 ```
 # 將spark jar檔上傳到HDFS中
+```
 hadoop fs -mkdir -p /user/spark_jars/
 hadoop fs -put $SPARK_HOME/jars/* /user/spark_jars/
-
+```
 # 啟動spark on yarn cluster
 ```
 cd ~/spark/sbin
