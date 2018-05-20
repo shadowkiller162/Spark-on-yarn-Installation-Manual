@@ -41,7 +41,7 @@ export SPARK_LOCAL_DIRS=/home/hadoop/spark
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export SPARK_EXECUTOR_INSTANCES=1
 export SPARK_EXECUTOR_CORES=1
-export SPARK_EXECUTOR_MEMORY=512m
+export SPARK_EXECUTOR_MEMORY=1G
 export SPARK_DRIVER_MEMORY=1G
 
 export SPARK_MASTER_IP=nn
@@ -57,8 +57,16 @@ spark.yarn.jars                                           h
 
 # 設定spark序列化，記憶體及CPU相關
 spark.serializer                                          org.apache.spark.serializer.KryoSerializer
-spark.driver.memory                                       1g
-spark.executor.memory                                     512m
+spark.driver.memory                                       1g
+spark.executor.instances                                  2
+spark.executor.memory                                     1g
+spark.executor.cores                                      1
+spark.cores.max                                           3
+
+spark.yarn.am.memory                                      1g
+spark.yarn.am.cores                                       1
+spark.yarn.jars                                           hdfs://localhost:9000/user/spark_jars/*.jar
+spark.executorEnv.PYTHONHASHSEED                          0
 ```
 # 將spark jar檔上傳到HDFS中
 ```
